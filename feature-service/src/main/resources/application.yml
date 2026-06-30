@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: feature-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/featuredb?options=-c%20TimeZone=Asia/Kolkata
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    spring.jpa.open-in-view: false
+
+server:
+  port: 8080
